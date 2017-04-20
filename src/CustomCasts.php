@@ -7,6 +7,18 @@ use Illuminate\Support\Str;
 trait CustomCasts
 {
     /**
+     * Get the type of cast for a model attribute.
+     *
+     * @param  string  $key
+     * @return string
+     */
+    protected function getCastType($key)
+    {
+        return ($this->getCasts()[$key]);
+    }
+
+    
+    /**
      * Cast an attribute to a native PHP type.
      *
      * @param  string  $key

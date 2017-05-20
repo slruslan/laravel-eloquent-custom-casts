@@ -17,7 +17,6 @@ trait CustomCasts
         return ($this->getCasts()[$key]);
     }
 
-    
     /**
      * Cast an attribute to a native PHP type.
      *
@@ -133,8 +132,9 @@ trait CustomCasts
      */
     protected function toClass($class, $value)
     {
-        if(!class_exists($class))
+        if(!class_exists($class)) {
             return $value;
+        }
 
         return unserialize($value);
     }

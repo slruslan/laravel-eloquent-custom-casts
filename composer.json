@@ -1,7 +1,7 @@
 {
     "name": "slruslan/laravel-eloquent-custom-casts",
     "description": "Provides Laravel Eloquent trait to enable custom class object casting.",
-    "version": "1.0",
+    "version": "1.0.2",
     "license": "GPL",
     "homepage": "https://github.com/slruslan/laravel-eloquent-custom-casts",
     "authors": [
